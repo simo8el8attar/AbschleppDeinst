@@ -1,5 +1,8 @@
-import React from 'react';
-import { Phone } from 'lucide-react';
+import React from "react";
+import { Phone } from "lucide-react";
+// @ts-ignore
+import { WhatsAppWidget } from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 export default function Contact() {
   return (
@@ -24,6 +27,20 @@ export default function Contact() {
             >
               info@towpro.com
             </a>
+            <div
+              style={{
+                position: "fixed", // Fixes the widget relative to the viewport
+                bottom: "20px", // 20px from the bottom
+                right: "20px", // 20px from the right
+                zIndex: 9999, // Ensures it's on top of other elements
+              }}
+            >
+              <WhatsAppWidget
+                phoneNumber="212609759798"
+                companyName="Abschlepp Deinst"
+                message="Salama Abschlepp Deinst at your service! How can we help you?"
+              />
+            </div>
           </div>
         </div>
       </div>

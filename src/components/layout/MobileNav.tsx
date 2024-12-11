@@ -1,6 +1,6 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
-import NavLink from './NavLink';
+import React from "react";
+import { Menu, X } from "lucide-react";
+import NavLink from "./NavLink";
 
 interface MobileNavProps {
   isOpen: boolean;
